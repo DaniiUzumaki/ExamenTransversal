@@ -11,28 +11,39 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-  <title>API de Videojuegos</title>
-  
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $.get('http://localhost:4000/videojuegos', function(data) {
-                $.each(data, function(index, juego) {
-                    $('#id_game').append('<li>' + videojuegos.titulo + '</li>');
-                });
-            });
-        });
-    </script>
 </head>
 
 <body>
   <header>
     <!-- place navbar here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">API REGISTRO VIDEOJUEGOS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Videojuegos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Plataforma</a>
+              </li>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Ingrese texto" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Búsqueda</button>
+          </form>
+        </div>
+      </div>
+    </nav>
   </header>
-
-  <h1>API de Videojuegos</h1>
-  <ul id="id_game"></ul>
-
   <main>
 
   </main>
