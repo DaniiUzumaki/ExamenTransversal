@@ -1,0 +1,169 @@
+Agregar Usuarios: todas las password les puse 12345678 y automaticamente creó ese codigo inmenso.
+
+{
+    "Estado": true,
+    "data": [
+        {
+            "id_user": 1,
+            "nombre": "Daniel",
+            "apellido": "San Martin",
+            "user": "dsanmartin",
+            "password": "$2b$10$zFiAinRv6QQTTHMkNlsNfexed0IRfwe4OT6zHI8kXoi.DlouWSi9G",
+            "activo": 1
+        },
+        {
+            "id_user": 2,
+            "nombre": "Julio",
+            "apellido": "Soto",
+            "user": "jsoto",
+            "password": "$2b$10$XwOB1UjB.9S8A5IZKKne8ekCQuIFR7DrU7HCYjF516y1EZX3mOQWq",
+            "activo": 1
+        },
+        {
+            "id_user": 4,
+            "nombre": "Clive",
+            "apellido": "Rosfield",
+            "user": "crosfield",
+            "password": "$2b$10$iZOh7y1c54Xd5u6DgBGsgeqw0FSJKWZ4OU7EweVzy7pmGjJzE3kW2",
+            "activo": 1
+        },
+        {
+            "id_user": 6,
+            "nombre": "Juan",
+            "apellido": "Pérez",
+            "user": "juan.perez",
+            "password": "$2b$10$q3jk4YxQCF2.yk4TwFBhKu2nvrqWm9DH2j6KpzS8V2fu9fcJF7J0W",
+            "activo": 1
+        },
+        {
+            "id_user": 7,
+            "nombre": "Juanin",
+            "apellido": "JuanHarry",
+            "user": "jjharry",
+            "password": "$2b$10$Tnmwrua0wtRij5fgTtl2Vutz.V3.ozXdwKuJjDUQxa3ivCnpdEATu",
+            "activo": 1
+        }
+{
+            "id_user": 11,
+            "nombre": "Naruto",
+            "apellido": "Uzumaki",
+            "user": "nuzumaki",
+            "password": "$2b$10$ikQt6Cyi.yFKYlPSRS3FmeT6UFMGlK6N1J2T7k9D4Yue0B4IV9Lji",
+            "activo": 1
+        }
+    ]
+
+---------------------------------------------------------------------------------------------
+------------------------ PLATAFORMA -------------------------------------------------------
+---------------------------------------------------------------------------------------------
+
+[
+        {
+            "id_plat": 2,
+            "nombre": "Nintendo"
+        },
+        {
+            "id_plat": 3,
+            "nombre": "PC"
+        },
+        {
+            "id_plat": 1,
+            "nombre": "Playstation"
+        },
+        {
+            "id_plat": 5,
+            "nombre": "Steam"
+        },
+        {
+            "id_plat": 4,
+            "nombre": "Xbox"
+        }
+    ]
+}
+
+-------------------------------------------------------------------------------------------------
+------------------  VIDEOJUEGOS -----------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+VOY A AGREGAR PARA TODOS ELLOS EL LINK DE LA IMAGEN QUE CORRESPONDE A CADA UNO.------------------
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+
+[
+        {
+            "id_game": 1,
+            "titulo": "Final Fantasy XVI",
+            "descripcion": " Juegos de rol...",
+            "id_plat": 1
+        },
+        {
+            "id_game": 2,
+            "titulo": "Super Mario Bros",
+            "descripcion": " Juegos estilo Libre...",
+            "id_plat": 2
+        },
+        {
+            "id_game": 3,
+            "titulo": "Pokemon Moon",
+            "descripcion": "Juego de aventuras y mundo abierto",
+            "id_plat": 2
+        },
+        {
+            "id_game": 4,
+            "titulo": "Nier Autómata",
+            "descripcion": "Juego rpg",
+            "id_plat": 1
+        },
+        {
+            "id_game": 5,
+            "titulo": "Dead By Daylight",
+            "descripcion": "Juego de terror y sobrevivencia",
+            "id_plat": 5
+        },
+        {
+            "id_game": 6,
+            "titulo": "Grand Theft Auto 5",
+            "descripcion": "Juego de violencia en las calles de una ciudad",
+            "id_plat": 3
+        },
+        {
+            "id_game": 7,
+            "titulo": "Genshin Impact",
+            "descripcion": "Juego JRPG de mundo abierto",
+            "id_plat": 5
+        },
+        {
+            "id_game": 8,
+            "titulo": "Dante Inferno",
+            "descripcion": "Juego de aventuras y mundo abierto",
+            "id_plat": 4
+        },
+        {
+            "id_game": 9,
+            "titulo": "Just Dance",
+            "descripcion": "Juego de baile colectivo",
+            "id_plat": 4
+        },
+        {
+            "id_game": 10,
+            "titulo": "Quake",
+            "descripcion": "Juego de disparos",
+            "id_plat": 3
+        }
+    ]
+}
+
+
+-----------------------------------------------------------------------
+----------------- LINKS DE IMAGENES -----------------------------------
+-----------------------------------------------------------------------
+
+FF16: https://static.wikia.nocookie.net/esfinalfantasy/images/6/65/Final_Fantasy_XVI_logo.png/revision/latest?cb=20200918165502
+SUPER MARIO BROS: https://depor.com/resizer/_63q4pRZutMQrF8_2_Xar10wNzc=/640x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/TQPOHOTU2VERPOLOBPIGKHCACU.png
+POKEMON MOON: https://img.pokemondb.net/boxes/lg/moon-large.jpg
+NIER AUTOMATA: https://media.vandal.net/m/31670/nier-automata-201739151954_1.jpg
+DEAD BY DAYLIGHT: https://media.vandal.net/m/45753/dead-by-daylight-2017623203837_7.jpg
+GTA 5: https://assetsio.reedpopcdn.com/eurogamer-zjp1vx.jpg?width=1920&height=1920&fit=bounds&quality=80&format=jpg&auto=webp
+GENSHIN IMPACT: https://www.mundodeportivo.com/alfabeta/hero/2021/04/Guia-Genshin-Impact.jpeg?width=1200&aspect_ratio=16:9
+DANTE INFERNO: https://static.wikia.nocookie.net/dantesinferno/images/c/c6/Dante%27s_Inferno.jpg/revision/latest?cb=20141101212513&path-prefix=es
+JUST DANCE: https://static.wikia.nocookie.net/just-dance/images/1/1a/Jd20_website_packshot_560x698_mobile-2_350421.jpg/revision/latest?cb=20191121162901&path-prefix=de
+QUAKE: https://static.wikia.nocookie.net/quake-series/images/3/32/Quake4_logo_1.jpg/revision/latest?cb=20161201225519&path-prefix=es
