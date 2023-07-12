@@ -22,7 +22,7 @@ const obtenerVideoJuegos = async (req, res) => {
 
         res.json(
             {
-                "ok": true,
+                "Estado": true,
                 data: rows
             }
         );
@@ -48,14 +48,14 @@ const agregarVideoJuego = async (req, res) => {
         if (!resultado.insertId) {
             return res.json(
                 {
-                    "ok": false,
+                    "Estado": false,
                     "msj": "no creaste nada de la videojuegos"
                 }
             );
         }
         res.json(
             {
-                "ok": true
+                "Estado": true
             }
         );
     } catch (error) {
@@ -79,7 +79,7 @@ const obtenerVideoJuego = async (req, res) => {
         const [rows] = await db.query(sql);
         res.json(
             {
-                "ok": true,
+                "Estado": true,
                 data: rows
             }
         );
@@ -107,7 +107,7 @@ const obtenerVideoJuegoNombre = async (req, res) => {
        const [rows] = await db.query(sql);
        res.json(
            {
-               "ok": true,
+               "Estado": true,
                data: rows
            }
        );
@@ -137,7 +137,7 @@ const editarVideoJuego = async (req, res) => {
         }
         //RETORNAMOS LA RESPUESTA
         return res.json({
-            "ok": true,
+            "Estado": true,
             "msj": "Se edito correctamente  la videojuegos"
         });
 
@@ -160,7 +160,7 @@ const eliminarVideoJuego = async (req, res) => {
 
         return res.json(
             {
-                "ok": true,
+                "Estado": true,
                 "msj": "videojuegos fue eliminada correctamente"
             }
         )

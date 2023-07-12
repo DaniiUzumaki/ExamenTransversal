@@ -27,7 +27,7 @@ const login = async (req, res) => {
         //VERIFICO SI MIS FILAS TRAEN INFORMACION, RECORDARNDO QUE NUESTRA VARIABLE ES UN ARREGLO
         if (!row.length) {
             return res.json({
-                "ok": false,
+                "Estado": false,
                 "msj": "usuario no existe en la base de datos"
             });
         }
@@ -37,7 +37,7 @@ const login = async (req, res) => {
         //VALIDO QUE ESTO SEA VERDADERO
         if (!existo) {
             return res.json({
-                "ok": false,
+                "Estado": false,
                 "msj": "contraseña invalida o usuario inactivo"
             });
         }
@@ -53,7 +53,7 @@ const login = async (req, res) => {
         const token = jwt.crearToken(usuario);
         //RESPONEMOS AL CLIENTE CON EL TOKEN
         res.json({
-            "ok": true,
+            "Estado": true,
             token
         });
     } catch (error) {
@@ -65,7 +65,7 @@ const login = async (req, res) => {
 const verificar = async (req, res) => {
     try {
         res.json({
-            ok: true
+            Estado: true
         });
     } catch (error) {
         return httpError(res, "Ocurrio algo en Verificar Token");

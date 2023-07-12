@@ -2,7 +2,7 @@
 const httpError = (res, msj, estado = 400) => {
     return res.status(estado).json(
         {
-            "ok": false,
+            "Estado": false,
             "msj": msj
         }
     );

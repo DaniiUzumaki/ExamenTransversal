@@ -18,7 +18,7 @@ const obtenerPlataformas = async (req, res) => {
         //RETORNAMOS LA RESPUESTA
         res.json(
             {
-                "ok": true,
+                "Estado": true,
                 data: rows
             }
         );
@@ -45,14 +45,14 @@ const agregarPlataforma = async (req, res) => {
         if (!resultado.insertId) {
             return res.json(
                 {
-                    "ok": false,
+                    "Estado": false,
                     "msj": "no creaste nada de la Plataforma"
                 }
             );
         }
         res.json(
             {
-                "ok": true
+                "Estado": true
             }
         );
     } catch (error) {
@@ -77,7 +77,7 @@ const obtenerPlataforma = async (req, res) => {
 
         res.json(
             {
-                "ok": true,
+                "Estado": true,
                 data: rows
             }
         );
@@ -103,7 +103,7 @@ const obtenerPlataformaNombre = async (req, res) => {
        const [rows] = await db.query(sql);
        res.json(
            {
-               "ok": true,
+               "Estado": true,
                data: rows
            }
        );
@@ -152,7 +152,7 @@ const eliminarPlataforma = async (req, res) => {
 
         return res.json(
             {
-                "ok": true,
+                "Estado": true,
                 "msj": "Plataforma fue eliminada correctamente"
             }
         )

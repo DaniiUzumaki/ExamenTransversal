@@ -12,7 +12,7 @@ const obtenerTodo = async (req, res) => {
         const [rows] = await db.query(sql);
 
         const resultado = {
-            ok: true,
+            Estado: true,
             data: rows
         }
         res.json(resultado);
@@ -31,7 +31,7 @@ const obtenerUnoSolo = async (req, res) => {
         const [row] = await db.query(sql);
 
         const resultado = {
-            ok: true,
+            Estado: true,
             data: row
         }
 

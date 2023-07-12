@@ -10,7 +10,7 @@ const TokenTrue = (req, res, next) => {
             //que no puedo seguir trabajando
             return res.status(400).json(
                 {
-                    "ok": false,
+                    "Estado": false,
                     "msj": "token no valido"
                 }
             );
@@ -20,7 +20,7 @@ const TokenTrue = (req, res, next) => {
     } catch (error) {
         return res.status(400).json(
             {
-                "ok": false,
+                "Estado": false,
                 "msj": "token no valido try-catch"
             }
         );

@@ -2,6 +2,11 @@
 require('dotenv').config();
 //IMPORTO EXPRESS
 const express = require('express');
+// const hbs = require('hbs');
+// // usaremos handlebars
+// app.set('view engine', 'hbs');
+// hbs.registerPartials(__dirname + '/views/partials');// DUDAS QUE VA EN ESTE DIRECTORIO??
+
 //INICIALIZO EXPRESS
 const app = express();
 //CONFIGURACIONES
@@ -21,7 +26,7 @@ app.use('/plataforma', plataformaRoutes);
 app.all('*', (req, res) => {
     res.json(
         {
-            "ok": false,
+            "Estado": false,
             "msj": "URL no encontrada"
         }
     );
